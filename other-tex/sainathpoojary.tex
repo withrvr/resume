@@ -1,0 +1,291 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{xcolor}
+\hypersetup{colorlinks,urlcolor=blue}
+
+
+% set default font color to dark gray
+\definecolor{dark-gray}{gray}{0.1}
+\color{dark-gray}
+
+% text color of textbf to black and bold
+\DeclareTextFontCommand{\textbf}{\bfseries\color{black}}
+
+
+
+\usepackage{charter}
+\usepackage{graphicx} % New package for image inclusion
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that the generated PDF is machine readable/ATS parsable.
+\pdfgentounicode=1
+
+% -------------------------
+% Custom commands with text color has green
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{-2pt}\textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% -------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+% ----------HEADING PHOTO----------
+
+% \begin{flushleft}
+%   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \begin{tabular}{l}
+%       \textbf{\huge Sainath Poojary} \\
+%       \small
+%       \href{https://github.com/sainathpoojary}{github.com/sainathpoojary} $|$ \href{https://linkedin.com/in/sainathpoojary}{linkedin.com/in/sainathpoojary} $|$ \href{https://sainathpoojary.tech}{sainathpoojary.tech}  $|$ \href{mailto:contact@sainathpoojary.tech}{contact@sainathpoojary.tech}
+%     \end{tabular} &
+%     \begin{tabular}{r}
+%       \includegraphics[height=2cm]{profile.png}
+%     \end{tabular}
+%   \end{tabular*}
+% \end{flushleft}
+
+% \vspace{-20pt}
+
+% ----------HEADING----------
+
+\begin{center}
+  {\huge \scshape Sainath Poojary} \\ \vspace{5pt}
+  \small
+  \href{https://sainathpoojary.tech}{sainathpoojary.tech} $|$ \href{https://github.com/sainathpoojary}{github.com/sainathpoojary} $|$ \href{https://linkedin.com/in/sainathpoojary}{linkedin.com/in/sainathpoojary} $|$ \href{mailto:contact@sainathpoojary.tech}{contact@sainathpoojary.tech}
+  \vspace{-8pt}
+\end{center}
+
+
+% -----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Mumbai -- Thadomal Shahani Engineering College}{May 2024}
+{Bachelor of Engineering in Computer Engineering (CGPA: 8.71 / 10.0)}{Mumbai, India}
+\resumeItemListStart
+\resumeItem{Courses: Web Dev, DSA, Computer Networks, Network Security, Database Management}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{MSBTE -- Bhausaheb Vartak Polytechnic}{Aug 2020}
+{Diploma in Computer Engineering (Percentage: 97.3 / 100)}{Mumbai, India}
+\resumeItemListStart
+\resumeItem{Courses: Programming Fundamentals, Computer Networks, Operating Systems, Database, Web Dev}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+% Frontend: ReactJS, React Native, HTML, CSS, JS
+% Backend: NodeJS, Flask, Python, Java
+% Tools: Figma, Adobe XD, Linux, Google Maps API, Digital Ocean Droplet, Git, Github
+
+% -----------SKILLS-----------
+\section{Skills}
+\vspace{-2pt}
+\begin{itemize}[leftmargin=0.2in, label={}]
+  {\item{
+                \begin{tabular}{ l@{\hskip 0.2in} l }
+                  \textbf{Frontend}: ReactJS, React Native, HTML , CSS, JS & \textbf{Backend}: NodeJS, Flask, Python, Java \\
+                  \textbf{Infrastructure}:  Linux, Digital Ocean Droplet   & \textbf{Design}: Figma, Adobe XD,             \\
+                  \textbf{Version Control}:  Git, GitHub                   & \textbf{Databases}: Firebase, MySQL, MongoDB  \\
+                \end{tabular}
+          }}
+\end{itemize}
+\vspace{-20pt}
+
+% -----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Planbuk - Task Management App}{Apr 2023 -- May 2023}
+{Software Engineer}{Birmingham, United Kingdom}
+\resumeItemListStart
+\resumeItem{Developed the official \href{https://www.planbuk.cc/}{website} using \textbf{ReactJS} and \textbf{Firestore} for seamless development and data storage.}
+\resumeItem{Created an internal API utilizing \textbf{GPT-3 API} and \textbf{Pillow} to generate scrollable image-based content and enhance the user reading experience.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Apna Cab - Cab Booking App}{June 2022 --  Mar 2023}
+{Software Engineer}{Mumbai, India}
+\resumeItemListStart
+\resumeItem{Developed \textbf{React Native} apps, \href{https://play.google.com/store/apps/details?id=co.apnacab}{Apna Cab} and \href{https://play.google.com/store/apps/details?id=co.apnacab.driver}{Apna Cab Driver}, with 100+ downloads. Integrated Firestore for real-time booking and leveraged \textbf{Google Maps API} for enhanced navigation. Implemented CI/CD using \textbf{GitHub Actions}.}
+\resumeItem{Achieved a remarkable 70\% increase in app ratings by leading the development of the User and Driver App. Deployed the app on \textbf{Digital Ocean Droplet} for enhanced performance and received consistent 5-star ratings.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Branding Catalyst - IT Solution.}{Jun 2020 -- Oct 2020}
+{React Native Intern}{Mumbai,India}
+\resumeItemListStart
+\resumeItem{Oversaw a team of 4-memeber, led development of Document Scanning App using \textbf{React Native} and \textbf{Adobe XD}.}
+\resumeItem{Collaborated with founder, ensured seamless coordination while creating visually stunning app experience.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+% -----------PROJECTS-----------
+\section{Projects}
+\vspace{-6pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{\normalsize{Event Radar}} $|$ \emph{MERN} $|$ \href{https://event-radar-frontend.vercel.app/}{Web app}, \href{https://github.com/sainathPoojary/event-radar-frontend}{GitHub}}{Apr 2023 -- May 2023}
+\resumeItemListStart
+\resumeItem{Centralized platform to track and display upcoming technical events from various sources.}
+\resumeItem{Automates event listing by scraping other platforms, ensuring comprehensive event information in one place.}
+\resumeItem{Simplifies event discovery, enabling users to easily find and stay updated on tech events.}
+\resumeItemListEnd
+\vspace{-15pt}
+
+\resumeProjectHeading
+{\textbf{\normalsize{Online Notepad}} $|$ \emph{React.js, Firebase} $|$ \href{https://onlinenotepad.vercel.app}{Web app}, \href{https://github.com/sainathpoojary/online-notepad}{GitHub}}{Jul 2022 -- Aug 2022}
+\resumeItemListStart
+\resumeItem{Developed a text/code saving app using React and Firebase for environments such as college labs.}
+\resumeItem{Demonstrated ability to create efficient and reliable React/Firebase solutions for storing and retrieving text/code.}
+\resumeItemListEnd
+\vspace{-15pt}
+
+\resumeProjectHeading
+{\textbf{\normalsize{Medicine Recommendation System}} $|$ \emph{HTML,CSS, JS, Flask, ML} $|$  \href{https://github.com/sainathPoojary/medicinerecommendation}{GitHub}}{Oct 2022 -- Nov 2022}
+\resumeItemListStart
+\resumeItem{Developed a web app that recommends medicine based on user symptoms using Python and Sklearn.}
+\resumeItem{Used the Support Vector Machine algorithm to predict medicine.}
+\resumeItem{Incorporated subtle animations to enhance the overall user experience.}
+\resumeItemListEnd
+\vspace{-15pt}
+
+\resumeProjectHeading
+{\textbf{\normalsize{Complaint Registration Portol}} $|$ \emph{HTML, CSS, JS, Flask, SQLite, AWS} $|$ \href{http://ec2-65-1-2-71.ap-south-1.compute.amazonaws.com/}{Web app}, \href{https://github.com/SainathPoojary/OnlineComplaintWebsite}{GitHub}}{Jan 2022 -- Mar 2022}
+\resumeItemListStart
+\resumeItem{Easily register complaints remotely from any device using our web app.}
+\resumeItem{The app has separate panels for users and admins.}
+\resumeItem{Users receive email and SMS notifications after their complaints are evaluated.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+% -----------EXTRACURRICULAR ACTIVITY-----------
+\section{Extracurricular Activity}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\textbf{\normalsize{Race2Stack}}}{Oct 2022}
+{}{}
+\vspace{-16pt}
+\resumeItemListStart
+\resumeItem{Secured 3\textsuperscript{rd} place in Race2Stack}
+\resumeItem{Race2Stack is a CP/DSA competition that tests participants' aptitude for solving intricate challenges.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{\normalsize{MegaHack 3.0}} $|$ {\normalfont \href{https://beyond-limitation.vercel.app/}{Web App}}, {\normalfont \href{https://github.com/SainathPoojary/beyondLimitation}{Github}}}{March 2023}
+{}{}
+\vspace{-15pt}
+\resumeItemListStart
+\resumeItem{MegaHack is the annual hackathon organized by St. John College of Engineering and Management}
+\resumeItem{Developed job portal for disabled individuals with voice commands, facial recognition, and voice-enabled resume.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{\normalsize{TSEC Hacks}} $|$ {\normalfont \href{https://barter-buddy.vercel.app/}{Web App}}, {\normalfont \href{https://github.com/sainathpoojary/barter-buddy}{Github}}}{Feb 2023}
+{}{}
+\vspace{-15pt}
+\resumeItemListStart
+\resumeItem{TSEC Hacks is the annual hackathon organized by Thadomal Shahani Engineering College}
+\resumeItem{Developed a Barter based marketplace for  buying and selling used goods }
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\end{document}
