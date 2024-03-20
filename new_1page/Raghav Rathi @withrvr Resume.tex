@@ -1,0 +1,280 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Raghav Rathi ~ @withrvr Resume},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Raghav Rathi} & Email: \href{mailto:contactwithrvr@gmail.com}{contactwithrvr@gmail.com}\\
+  \href{https://withrvr.bio.link/}{withrvr.bio.link} & Phone No: \href{tel:+918855996970}{+918855996970} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Thadomal Shahani Engineering College, Mumbai, MH}{2021 - 2025}
+      {Bachelor of Engineering in Computer Science }{(till Sem-5) CGPA: 8.30 }
+    \resumeSubheading
+      {Government Polytechnic Amravati, MH}{2018 - 2021}
+      {Diploma in Computer Engineering}{Percentage: 97.05}
+  \resumeSubHeadingListEnd
+
+
+
+
+%
+%--------LINKS------------
+\section{Links}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Problem Solving}{
+   \href{https://www.codechef.com/users/withrvr}{2 star on Codechef} | 
+   \href{https://leetcode.com/withrvr/}{Leetcode ++300} | 
+   \href{https://www.codingninjas.com/studio/profile/withrvr}{Better than 96\% CodingNinjas} | 
+   \href{https://codeforces.com/profile/withrvr}{newbie Codeforces}
+   }
+   \resumeSubItem{Other}{
+   \href{https://github.com/stars/withrvr/lists/projects}{My Top 10 Projects} | 
+   \href{https://dev.to/withrvr}{Tried very small blogs} | 
+   \href{https://www.linkedin.com/in/withrvr/}{Linkedin} | 
+   \href{https://www.github.com/withrvr/}{Github}
+   }
+ \resumeSubHeadingListEnd
+
+
+
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mind Zita/BWD}{Aug 2021 - Oct 2021 (3 Months)}
+      {Software Engineer : Internship}{(Onsite) Pune, MH}
+      % {Mind Zita/BWD}{(Onsite) Pune, MH}
+      % {Software Engineer : Internship}{(3 Months) Aug 2021 - Oct 2021}
+      \resumeItemListStart
+        \resumeItem{Technology Used}
+          {cPanel, Wordpress, shopify eCommerce, PHP/Bootstrap, HTML/CSS/JS}
+        \resumeItem{Other Learning}
+          {SEO, Testing Sites, Little Designing, Excel and Documenting}
+        \resumeItem{New Client (16+ projects)}
+          {from Creating to Deployment}
+        \resumeItem{Old Client (around 50\%)}
+          {Updates / Maintenance / Improving}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Bitlance Tech Hub Pvt. Ltd}{May 2020 - Jul 2020 (3 Months)}
+      {Full Stack Development : Training Internship}{(Offline) Amravati, MH}
+      % {Bitlance Tech Hub Pvt. Ltd}{(Offline) Amravati, MH}
+      % {Full Stack Development : Training Internship}{(3 Months) May 2020 - Jul 2020}
+      \resumeItemListStart
+      \resumeItem{Python}{Basic to Advance Data Stucture, OOP, Numpy/Pandas, Matplotlib, ... etc}
+      \resumeItem{Django}{Admin Panel, Authentication, Connecting with SQL-lite, Model-Template-View Framework, ...etc}
+      \resumeItem{Bootstrap}{CSS library and its classes, Mobile Responsive, ...etc}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+
+
+    \resumeSubheading
+      {HaT (Habit Tracker)}{Feb 2024 - present  (5 Months)}
+      {Next.js, TailwindCSS}{Under Devlopment}
+      \resumeItemListStart
+        \resumeItem{Aim}
+          {Gamify it \& help user to create positive impact to excel in daily Routine}
+      \resumeItemListEnd
+
+
+
+    \resumeSubheading
+      {ChatGPT Gmail Bot}{Jan 2023 - Jan 2023 (1 Months)}
+      {Chrome Extension, HTML/JS}{
+      \href{https://github.com/withrvr/ChatGPT-Gmail-Bot}{Github}
+      }
+      \resumeItemListStart
+        \resumeItem{Works?}
+          {to connect ChatGPT AI with gmail, and write reply email for incoming emails in Standard \& fast way}
+        \resumeItem{Teached me}
+          {(from Udemy Course) how extensions work, connect different tabs and change content of the page}
+      \resumeItemListEnd
+
+
+
+    \resumeSubheading
+      {Hulu Clone}{Dec 2021 - Jan 2022 (2 Months)}
+      {TailwindCSS, Next.js, TMDB API, Typescript}{
+      \href{https://hulu-clone-withrvr.vercel.app/}{Website},
+      \href{https://github.com/withrvr/Hulu-Clone}{Github}
+      }
+      \resumeItemListStart
+        \resumeItem{Achived}
+          {Showing Latest Movie \& Series by Category, with reach in UI/UX }
+        \resumeItem{Learned}
+          {(from youtube) fetch \& connect API, how to clone, tiny CSS features/changes, NextJS caching}
+      \resumeItemListEnd
+
+
+
+
+    \resumeSubheading
+      {Chess Training Games}{Jun 2021 - Jul 2021 (2 Months)}
+      {CSS, React.js, Yarn, Chess.js/chessboardjsx Lib}{
+      \href{https://chess-training-games.netlify.app/}{Website},
+      \href{https://github.com/withrvr/Chess-Training-Games}{Github}
+      }
+      \resumeItemListStart
+        \resumeItem{Improves Users}
+          {Chess Positional Game, by Increasing Reaction Time and Muscle Memory}
+        \resumeItem{Improved my}
+          {all fundamentals skills of react, working with npm library, netlify deployment}
+      \resumeItemListEnd
+
+
+
+
+  
+    \resumeSubheading
+      {1Link}{Mar 2021 - Jun 2021 (4 Months)}
+      {Chart.js, Python, Django, SQL-lite, Bootstrap, jQuery}{
+      \href{https://github.com/withrvr/1Link/wiki/Images-mobile-view}{Images},
+      \href{https://github.com/withrvr/1Link}{Github}
+      }
+      \resumeItemListStart
+        % \resumeItem{Aim}
+        %   {To create the Universal link}
+        \resumeItem{Why?}
+          {(Universal link) to Create 1 and Only `1 Link` which will contain All the link to be Shared}
+        \resumeItem{Concept}
+          {User Profile contains Slices with contains links in the categories customized by user}
+        \resumeItem{Helps in}
+          {Sharing links \& Managing becomes easy, all 100\% links used everywhere at one place}
+      \resumeItemListEnd
+  
+  
+  \resumeSubHeadingListEnd
+
+% %
+% %--------PROGRAMMING SKILLS------------
+% \section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{Web Devlopment}{Next.js(React), Django, Bootstrap, Tailwindcss, HTML/CSS/JS} 
+%     \item{
+%      \textbf{Languages: }{SQL, Python, C++, Java}
+%      % \hfill
+%      \space \space \space \space \space \space \space \space \space
+%      \textbf{Other: }{Git/Github, VScode} 
+%    }
+%    % \resumeSubItem{Languages}{: SQL, Python, C++, Java}
+%    % \resumeSubItem{Other}{: Git/Github, VScode} 
+%  \resumeSubHeadingListEnd
+
+
+
+%
+%--------Extracurricular Activity------------
+\section{Extra Curricular Activities}
+ % \resumeSubHeadingListStart
+    % \item{
+     \textbf{Video Creator: }{On YT \& IG Channel}
+     \hfill
+     \textbf{Non-Tech: }{100 Days Pushup Challenge, Read Books for 2 Months}
+   % }
+   % \resumeSubItem{Video Creator}{On YT and IG Channels}
+   % \resumeSubItem{Non-Tech}{100 Days Push Challenge on IG, Reading Book daily for 2 months}
+ % \resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
